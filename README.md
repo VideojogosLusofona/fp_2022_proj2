@@ -74,6 +74,12 @@ Quando um cometa é atingido por uma bala dependendo do seu tipo, pode multiplic
 
 Deverá existir um limite total de cometas durante o jogo, este limite ficando ao critério de cada grupo. Cometas são inicializados sempre como sendo do tipo grande, e têm uma prupulsão e direção aleatória. Quando um cometa se multiplica por uma versão mais *pequena*, a direção deste é aleatória no entanto a propulsão mantem-se. Um cometa só é totalmente destruído quando após a sua versão pequena é atingida. 
 
+#### Limites do Mundo (Wrap-Around)
+
+![Wrap Aroud](figures/Wrap.PNG)
+
+Quando qualquer objeto (i.e. nave, cometa ou bala) chega ao limite do mundo, este *dá a volta* para o lado oposto do ecrã. 
+
 #### Leaderboard
 
 O leaderboard deverá ser permanente (mesmo quando se desliga o jogo), e para isso é necessário escrever para um ficheiro os valores destes. Para tal é necessario usar funções de read e write para um ficheiro de texto que irá ser guardado na pasta local do jogo. Funções uteis para ver:
