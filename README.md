@@ -57,8 +57,8 @@ A seta *Up* aplica uma força de propulsão na direção onde a nave está apont
 A tecla *espaço* (ou spacebar) dispara uma bala na direção ao qual a nave está apontada com uma velocidade constante. A frequência de disparo é **obrigatóriamente** de 1 em 1 segundo. 
 
 A bala é destruída consoante estas condições:
-	- Colide com um cometa
-	- Passou o tempo limite de *vida* que são 4 segundos
+- Colide com um cometa
+- Passou o tempo limite de *vida* que são 4 segundos
 
 #### Mecânicas dos Cometas
 
@@ -68,9 +68,9 @@ Existem 3 estilos de cometas diferentes: Grande, Medio e Pequeno. O Cometa inici
 
 Quando um cometa é atingido por uma bala dependendo do seu tipo, pode multiplicar-se em cometas de um tipo abaixo, ou seja:
 	
-	- Cometa Grande -> 3 x Cometa Medio
-	- Cometa Medio -> 5 x Cometa Pequeno
-	- Cometa Pequeno -> Destroy
+- Cometa Grande -> 3 x Cometa Medio
+- Cometa Medio -> 5 x Cometa Pequeno
+- Cometa Pequeno -> Destroy
 
 Deverá existir um limite total de cometas durante o jogo, este limite ficando ao critério de cada grupo. Cometas são inicializados sempre como sendo do tipo grande, e têm uma prupulsão e direção aleatória. Quando um cometa se multiplica por uma versão mais *pequena*, a direção deste é aleatória no entanto a propulsão mantem-se. Um cometa só é totalmente destruído quando após a sua versão pequena é atingida. 
 
@@ -78,8 +78,8 @@ Deverá existir um limite total de cometas durante o jogo, este limite ficando a
 
 O leaderboard deverá ser permanente (mesmo quando se desliga o jogo), e para isso é necessário escrever para um ficheiro os valores destes. Para tal é necessario usar funções de read e write para um ficheiro de texto que irá ser guardado na pasta local do jogo. Funções uteis para ver:
 
-	- [Read File](https://www.w3schools.com/python/python_file_open.asp)
-	- [Write File](https://www.w3schools.com/python/python_file_write.asp)
+- [Read File](https://www.w3schools.com/python/python_file_open.asp)
+- [Write File](https://www.w3schools.com/python/python_file_write.asp)
 
 ## Objetivos e Critério de Avaliação
 
