@@ -37,8 +37,8 @@ A seta *Up* aplica uma força de propulsão na direção onde a nave está apont
 
 A tecla *espaço* (ou spacebar) dispara uma bala na direção ao qual a nave está apontada com uma velocidade constante. A frequência de disparo é **obrigatóriamente** de 1 em 1 segundo. A bala é destruída consoante estas condições:
 
-	* Colide com um cometa
-	* Passou o tempo limite de *vida* que são 4 segundos
+	- Colide com um cometa
+	- Passou o tempo limite de *vida* que são 4 segundos
 
 ## Objetivos e Critério de Avaliação
 
