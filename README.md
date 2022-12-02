@@ -74,8 +74,12 @@ Quando um cometa é atingido por uma bala dependendo do seu tipo, pode multiplic
 
 Deverá existir um limite total de cometas durante o jogo, este limite ficando ao critério de cada grupo. Cometas são inicializados sempre como sendo do tipo grande, e têm uma prupulsão e direção aleatória. Quando um cometa se multiplica por uma versão mais *pequena*, a direção deste é aleatória no entanto a propulsão mantem-se. Um cometa só é totalmente destruído quando após a sua versão pequena é atingida. 
 
+#### Leaderboard
 
+O leaderboard deverá ser permanente (mesmo quando se desliga o jogo), e para isso é necessário escrever para um ficheiro os valores destes. Para tal é necessario usar funções de read e write para um ficheiro de texto que irá ser guardado na pasta local do jogo. Funções uteis para ver:
 
+	- [*Read File*](https://www.w3schools.com/python/python_file_open.asp)
+	- [*Write File*](https://www.w3schools.com/python/python_file_write.asp)
 
 ## Objetivos e Critério de Avaliação
 
