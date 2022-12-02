@@ -30,7 +30,7 @@ O jogo deverá apresentar um ecrã de início com a opção de começar um jogo 
 
 ##### Game Over & Leaderboard
 
-![Game Over](figures/GameOver.gif)
+![Game Over](figures/GameOverScreen.gif)
 
 O jogo deverá também apresentar um ecrã de **Game Over**, que acontece após a nave do jogador ser destruída. O jogo deverá apresentar um ecrã com as letras "Game Over" e caso o jogador obter uma pontuação maior do que um dos 10 primeiros que estão no leaderboard é pedido a este para inserir 3 Letras (as suas iniciais). O leaderboard é sempre mostrado durante 6 segundos após o game over, mesmo se o jogador não tiver pontuação. O jogo volta ao *Start Screen* após estas sequências. 
 
