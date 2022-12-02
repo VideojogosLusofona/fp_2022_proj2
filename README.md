@@ -4,7 +4,7 @@
 Todos os grupos devem implementar em Python um jogo chamado *Comets*. Este jogo necessita **obrigatóriamente** interface gráfica em PyGame.
 
 ## Contexto do Jogo
-O jogo *Comets* é uma recriação do classico jogo *Asteroids* onde o jogador controla uma nave num plano 2D onde o objetivo é destruir o maior número de cometas possível enquanto tenta evitá-los.
+O jogo *Comets* é uma recriação do classico jogo [*Asteroids*](https://www.youtube.com/watch?v=WYSupJ5r2zo) onde o jogador controla uma nave num plano 2D onde o objetivo é destruir o maior número de cometas possível enquanto tenta evitá-los.
 
 ### Objectivo do Jogo
 O objetivo do jogo é destruir o maior numero de cometas que aparecem no ecrã. Se um cometa colidir com a nave do jogador este é destruído. O jogador tem apenas **1 vida**, ou seja se o jogador é destruído é imediatamente **game over**.
@@ -15,11 +15,11 @@ O jogador controla uma nave num plano 2D usando as setas e a tecla **space** (ou
 
 ![Interface Principal do Jogo *Comets*](figures/MainInterface.PNG)
 
-A interface principal é estática (não se mexe) onde apenas os objectos (i.e. a nave e os cometas) se movem no plano 2D. Existe também um sistema de pontos que incrementa com base no numero de cometas destruídos. Cometas são representados por circulos enquanto a nave do jogador é um triangulo. Para a nave do jogador é necessário definir uma das arestas deste triangulo como a *frente* da nave enquanto as outras duas são a *traseira*. 
+A interface principal é estática (não se mexe) onde apenas os objectos (i.e. a nave e os cometas) se movem no plano 2D. Este plano é um ecrã 800x600 (ou seja 800 Width e 600 Height).
 
-**Será da frente do triangulo que o jogador dispara.**
+Existe um sistema de pontos que incrementa com base no numero de cometas destruídos. Cometas são representados por circulos enquanto a nave do jogador é um triangulo. Para a nave do jogador é necessário definir uma das arestas deste triangulo como a *frente* da nave enquanto as outras duas são a *traseira*. **Será da frente do triangulo que o jogador dispara.**
 
-#### Moviment da Nave
+#### Controlar a Nave
 
 Todo o movimento da nave é feita com o teclado, usando as setas e a tecla espaço para disparar.  
 
@@ -27,7 +27,18 @@ Todo o movimento da nave é feita com o teclado, usando as setas e a tecla espa�
 
 ![Move Left](figures/MoveLeft.gif)
 
-As setas para a direita e para a esquerda faz uma rotação da nave numa posição fixa. 
+As setas para a direita e para a esquerda fazem uma rotação fixa da nave.
+
+![Propulsion](figures/Propulsion.gif)
+
+A seta *Up* aplica uma força de propulsão na direção onde a nave está apontada, esta força tem uma aceleração ao qual fica zero após atingir um valor constante. É importante realçar que não existe *travão*, ou seja para reduzir a velocidade da nave este tem que fazer propulsão no sentido contrário do seu deslocamento corrente.  
+
+![Shoot](figures/Shoot.gif)
+
+A tecla *espaço* (ou spacebar) dispara uma bala na direção ao qual a nave está apontada com uma velocidade constante. A frequência de disparo é **obrigatóriamente** de 1 em 1 segundo. A bala é destruída consoante estas condições:
+
+	* Colide com um cometa
+	* Passou o tempo limite de *vida* que são 4 segundos
 
 ## Objetivos e Critério de Avaliação
 
