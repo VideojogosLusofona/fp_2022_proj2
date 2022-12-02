@@ -4,10 +4,19 @@
 Todos os grupos devem implementar em Python um jogo chamado *Comets*. Este jogo necessita **obrigatóriamente** interface gráfica em PyGame.
 
 ## Contexto do Jogo
+O jogo *Comets* é uma recriação do classico jogo *Asteroids* onde o jogador controla uma nave num plano 2D onde o objetivo é destruir o maior número de cometas possível enquanto tenta evitá-los.
 
 ### Objectivo do Jogo
+O objetivo do jogo é destruir o maior numero de cometas que aparecem no ecrã. Se um cometa colidir com a nave do jogador este é destruído. O jogador tem apenas **1 vida**, ou seja se o jogador é destruído é imediatamente **game over**.
 
-### Fluxo do Jogo
+### Gameplay
+
+O jogador controla uma nave num plano 2D usando as setas e a tecla **space** (ou espaço) do teclado. 
+
+![Interface Principal do Jogo *Comets*](figures/MainInterface.PNG)
+*A interface principal é estática (não se mexe) onde apenas os objectos (i.e. a nave e os cometas) se movem no plano 2D. Existe também um sistema de pontos que incrementa com base no numero de cometas destruídos.*
+
+
 
 ## Objetivos e Critério de Avaliação
 
