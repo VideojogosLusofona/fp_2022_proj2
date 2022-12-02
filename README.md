@@ -78,8 +78,8 @@ Deverá existir um limite total de cometas durante o jogo, este limite ficando a
 
 O leaderboard deverá ser permanente (mesmo quando se desliga o jogo), e para isso é necessário escrever para um ficheiro os valores destes. Para tal é necessario usar funções de read e write para um ficheiro de texto que irá ser guardado na pasta local do jogo. Funções uteis para ver:
 
-	- [*Read File*](https://www.w3schools.com/python/python_file_open.asp)
-	- [*Write File*](https://www.w3schools.com/python/python_file_write.asp)
+	- [Read File](https://www.w3schools.com/python/python_file_open.asp)
+	- [Write File](https://www.w3schools.com/python/python_file_write.asp)
 
 ## Objetivos e Critério de Avaliação
 
