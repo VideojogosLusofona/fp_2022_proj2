@@ -14,9 +14,20 @@ O objetivo do jogo é destruir o maior numero de cometas que aparecem no ecrã. 
 O jogador controla uma nave num plano 2D usando as setas e a tecla **space** (ou espaço) do teclado. 
 
 ![Interface Principal do Jogo *Comets*](figures/MainInterface.PNG)
-*A interface principal é estática (não se mexe) onde apenas os objectos (i.e. a nave e os cometas) se movem no plano 2D. Existe também um sistema de pontos que incrementa com base no numero de cometas destruídos.*
 
+A interface principal é estática (não se mexe) onde apenas os objectos (i.e. a nave e os cometas) se movem no plano 2D. Existe também um sistema de pontos que incrementa com base no numero de cometas destruídos. Cometas são representados por circulos enquanto a nave do jogador é um triangulo. Para a nave do jogador é necessário definir uma das arestas deste triangulo como a *frente* da nave enquanto as outras duas são a *traseira*. 
 
+**Será da frente do triangulo que o jogador dispara.**
+
+#### Moviment da Nave
+
+Todo o movimento da nave é feita com o teclado, usando as setas e a tecla espaço para disparar.  
+
+![Move Right](figures/MoveRight.gif)
+
+![Move Left](figures/MoveLeft.gif)
+
+As setas para a direita e para a esquerda faz uma rotação da nave numa posição fixa. 
 
 ## Objetivos e Critério de Avaliação
 
