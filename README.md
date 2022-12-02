@@ -49,8 +49,8 @@ Existem 3 estilos de cometas diferentes: Grande, Medio e Pequeno. O Cometa inici
 
 Quando um cometa é atingido por uma bala dependendo do seu tipo, pode multiplicar-se em cometas de um tipo abaixo, ou seja:
 	
-	- Cometa Grande -> 3 $\times$ Cometa Medio
-	- Cometa Medio -> 5 $\times$ Cometa Pequeno
+	- Cometa Grande -> 3 x Cometa Medio
+	- Cometa Medio -> 5 x Cometa Pequeno
 	- Cometa Pequeno -> Destroy
 
 
