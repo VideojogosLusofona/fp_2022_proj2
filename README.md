@@ -9,15 +9,34 @@ O jogo *Comets* é uma recriação do classico jogo [*Asteroids*](https://www.yo
 ### Objectivo do Jogo
 O objetivo do jogo é destruir o maior numero de cometas que aparecem no ecrã. Se um cometa colidir com a nave do jogador este é destruído. O jogador tem apenas **1 vida**, ou seja se o jogador é destruído é imediatamente **game over**.
 
-### Gameplay
+### Descrição Técnica
 
-O jogador controla uma nave num plano 2D usando as setas e a tecla **space** (ou espaço) do teclado. 
+#### Interface
+O jogador controla uma nave num plano 2D usando as setas e a tecla **spacebar** (ou espaço) do teclado. 
 
 ![Interface Principal do Jogo *Comets*](figures/MainInterface.PNG)
 
-A interface principal é estática (não se mexe) onde apenas os objectos (i.e. a nave e os cometas) se movem no plano 2D. Este plano é um ecrã 800x600 (ou seja 800 Width e 600 Height).
+A interface principal é estática (não se mexe) onde apenas os objectos (i.e. a nave e os cometas) se movem no plano 2D. Este plano é representado por uma janela de 800x600 (800 largura e 600 altura).
 
-Existe um sistema de pontos que incrementa com base no numero de cometas destruídos. Cometas são representados por circulos enquanto a nave do jogador é um triangulo. Para a nave do jogador é necessário definir uma das arestas deste triangulo como a *frente* da nave enquanto as outras duas são a *traseira*. **Será da frente do triangulo que o jogador dispara.**
+Cometas são representados por circulos enquanto a nave do jogador é representado por um triangulo. É necessário definir uma *frente*, no qual consiste de uma das 3 arestas do triangulo, enquanto as outras duas representa a *traseira* da nave. **Será da frente deste triangulo que o jogador dispara e se movimenta.**
+
+A interface apresenta também um sistema de pontos que incrementa consoante o numero total de cometas destruídos. 
+
+##### Start Screen
+
+![Start Screen](figures/StartScreen.gif)
+
+O jogo deverá apresentar um ecrã de início com a opção de começar um jogo novo ou sair da aplicação.
+
+##### Game Over & Leaderboard
+
+![Game Over](figures/GameOver.gif)
+
+O jogo deverá também apresentar um ecrã de **Game Over**, que acontece após a nave do jogador ser destruída. O jogo deverá apresentar um ecrã com as letras "Game Over" e caso o jogador obter uma pontuação maior do que um dos 10 primeiros que estão no leaderboard é pedido a este para inserir 3 Letras (as suas iniciais). O leaderboard é sempre mostrado durante 6 segundos após o game over, mesmo se o jogador não tiver pontuação. O jogo volta ao *Start Screen* após estas sequências. 
+
+#### Início do Jogo
+
+A nave começa o jogo no meio do ecrã de jogo com dois cometas do tipo *grande* (ver abaixo), ambos estes com propulsões e direções aleatórias. O score também é inicializado a 0 no início.
 
 #### Controlar a Nave
 
@@ -52,6 +71,10 @@ Quando um cometa é atingido por uma bala dependendo do seu tipo, pode multiplic
 	- Cometa Grande -> 3 x Cometa Medio
 	- Cometa Medio -> 5 x Cometa Pequeno
 	- Cometa Pequeno -> Destroy
+
+Deverá existir um limite total de cometas durante o jogo, este limite ficando ao critério de cada grupo. Cometas são inicializados sempre como sendo do tipo grande, e têm uma prupulsão e direção aleatória. Quando um cometa se multiplica por uma versão mais *pequena*, a direção deste é aleatória no entanto a propulsão mantem-se. Um cometa só é totalmente destruído quando após a sua versão pequena é atingida. 
+
+
 
 
 ## Objetivos e Critério de Avaliação
