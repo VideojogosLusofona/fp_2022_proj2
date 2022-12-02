@@ -74,6 +74,13 @@ Quando um cometa é atingido por uma bala dependendo do seu tipo, pode multiplic
 
 Deverá existir um limite total de cometas durante o jogo, este limite ficando ao critério de cada grupo. Cometas são inicializados sempre como sendo do tipo grande, e têm uma prupulsão e direção aleatória. Quando um cometa se multiplica por uma versão mais *pequena*, a direção deste é aleatória no entanto a propulsão mantem-se. Um cometa só é totalmente destruído quando após a sua versão pequena é atingida. 
 
+#### Detecção de Colisões
+
+Uma das componentes mais críticas de implementar neste jogo é a detecção de colisões entre os vários objetos do jogo. Especificamente é necessário detectar colisões entre:
+
+- Balas e Cometas: Quando esta colisão é detectada o cometa explode consoante as mecânicas descritas acima;
+- Cometas e Naves: Quando esta colisão é detectada a nave do jogador *explode* e é Game Over.
+
 #### Limites do Mundo (Wrap-Around)
 
 ![Wrap Aroud](figures/Wrap.PNG)
@@ -119,10 +126,24 @@ Em que _D_ corresponde à nota da discussão e percentagem equitativa de realiza
 
 ### Requisito Mínimo do Projeto
 
+Tudo descrito no enunciado são as funcionalidades minimas para este projeto, e isto inclui:
+
+- Funcionalidades da Nave
+- Funcionalidades dos Cometas
+- Detecção de Colisões
+- Ecrãs de Jogos (Start e Game Over Screen)
+- Leaderboard
+- UI do Jogo
+- Mundo Wrap-Around
 
 ### Pontuação Extra
 
 **Importante**: Façam o minimo requerido primeiro antes de tentarem fazer mais funcionalidades!
+
+- Sistema de Som
+- Power Up para Armas
+- Sistema de Difficuldade Progressiva
+- Sistemas de Particulas, Efeitos e Arte
 
 ## Entrega
 O projeto deve ser entregue por **grupos de 2 alunos** via Moodle até às **23:59** do dia **23 de Dezembro 2022**. Um (e apenas um) dos elementos do grupo deve ser submeter um ficheiro `zip` com a solução completa, nomeadamente:
