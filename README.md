@@ -35,10 +35,23 @@ A seta *Up* aplica uma força de propulsão na direção onde a nave está apont
 
 ![Shoot](figures/Shoot.gif)
 
-A tecla *espaço* (ou spacebar) dispara uma bala na direção ao qual a nave está apontada com uma velocidade constante. A frequência de disparo é **obrigatóriamente** de 1 em 1 segundo. A bala é destruída consoante estas condições:
+A tecla *espaço* (ou spacebar) dispara uma bala na direção ao qual a nave está apontada com uma velocidade constante. A frequência de disparo é **obrigatóriamente** de 1 em 1 segundo. 
 
+A bala é destruída consoante estas condições:
 	- Colide com um cometa
 	- Passou o tempo limite de *vida* que são 4 segundos
+
+#### Mecânicas dos Cometas
+
+Existem 3 estilos de cometas diferentes: Grande, Medio e Pequeno. O Cometa inicializa **sempre** como grande e após a ser distruído este multiplica-se para um tipo diretamente abaixo, ou seja um cometa passa de grande para medio, de médio para pequeno e após ser atingido em pequeno é completamente distruído.
+
+![Comet Hierarchy](figures/Comets.PNG)
+
+Quando um cometa é atingido por uma bala dependendo do seu tipo, pode multiplicar-se em cometas de um tipo abaixo, ou seja:
+	- Cometa Grande -> 3 $\times$ Cometa Medio
+	- Cometa Medio -> 5 $\times$ Cometa Pequeno
+	- Cometa Pequeno -> Destroy
+
 
 ## Objetivos e Critério de Avaliação
 
