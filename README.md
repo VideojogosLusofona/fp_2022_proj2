@@ -83,9 +83,7 @@ Uma das componentes mais críticas de implementar neste jogo é a detecção de 
 
 #### Limites do Mundo (Wrap-Around)
 
-![Wrap Aroud](figures/Wrap.PNG)
-
-Quando qualquer objeto (i.e. nave, cometa ou bala) chega ao limite do mundo, este *dá a volta* para o lado oposto do ecrã. 
+Quando qualquer objeto (i.e. nave, cometa ou bala) chega ao limite do mundo, este *desaparece* e aparece no lado oposto do ecrã.
 
 #### Leaderboard
 
