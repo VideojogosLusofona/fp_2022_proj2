@@ -14,7 +14,7 @@ O objetivo do jogo é destruir o maior numero de cometas que aparecem no ecrã. 
 #### Interface
 O jogador controla uma nave num plano 2D usando as setas e a tecla **spacebar** (ou espaço) do teclado. 
 
-![Interface Principal do Jogo *Comets*](figures/MainInterface.PNG)
+![Interface Principal do Jogo *Comets*](figures/MainInterface.png)
 
 A interface principal é estática (não se mexe) onde apenas os objectos (i.e. a nave e os cometas) se movem no plano 2D. Este plano é representado por uma janela de 800x600 (800 largura e 600 altura).
 
