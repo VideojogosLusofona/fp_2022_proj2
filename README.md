@@ -94,6 +94,10 @@ O leaderboard deverá ser permanente (mesmo quando se desliga o jogo), e para is
 - [Read File](https://www.w3schools.com/python/python_file_open.asp)
 - [Write File](https://www.w3schools.com/python/python_file_write.asp)
 
+### Referências
+
+Para exemplos de implementação os alunos poderão analisar o código do Prof. Diogo de Andrade [Pysteroids](https://github.com/DiogoDeAndrade/Pysteroids). 
+
 ## Objetivos e Critério de Avaliação
 
 Este projeto tem os seguintes objetivos:
